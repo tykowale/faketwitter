@@ -6,4 +6,11 @@ defmodule Backend.Post do
 
     timestamps
   end
+
+  @required_fields ~w(message)
+
+  def changeset(model, params \\ :empty) do
+    model
+    |> cast(params, @required_fields, [])
+  end
 end

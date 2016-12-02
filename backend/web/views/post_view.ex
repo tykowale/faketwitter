@@ -15,7 +15,9 @@ defmodule Backend.PostView do
 
   def post_json(post) do
     %{
-      message: post.message
+      id: post.id,
+      message: post.message,
+      inserted_at: post.inserted_at
     }
   end
 end

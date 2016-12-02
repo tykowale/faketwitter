@@ -8,6 +8,6 @@ defmodule Backend.Router do
   scope "/api", Backend do
     pipe_through :api
 
-    resources "/posts", PostController, only: [:index, :show]
+    resources "/posts", PostController, only: [:index, :show, :create]
   end
 end
