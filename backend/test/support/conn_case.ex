@@ -25,6 +25,8 @@ defmodule Backend.ConnCase do
       import Ecto.Changeset
       import Ecto.Query
 
+      import Backend.Factory
+      import Backend.ConnCaseHelper
       import Backend.Router.Helpers
 
       # The default endpoint for testing
